@@ -1,0 +1,15 @@
+table {
+    border-spacing: 0;
+}
+
+td {
+    width: 8px;  /* Adjust the width */
+    height: 8px; /* Adjust the height */
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.alive {
+    background-color: black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="stylesheet" type="text/css" href="gameOfLife.css"> <!-- Correct way to include CSS -->
+    <script src="gameOfLife.js"></script>
+</head>
+<body>
+    <div id="game">
+        <div id="setting">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+
+            <div>
+                <label for="speed">Speed:</label>
+                <input type="range" id="speed" name="speed" min="1" max="250" onchange="changeSpeed()">
+                <div id="speedValue">
+                    speed: <span id="speedValueText"> 50 </span>
+                </div>
+            </div>
+            <div>
+                <label for="size">Size:</label>
+                <input type="range" id="size" name="size" min="1" max="100" onchange="changeSize()">
+                <div id="sizeValue">
+                    size: <span id="sizeValueText"> 50 </span>
+                </div>
+            </div>
+
+            <div id="randomize">
+                <input type="checkbox" id="randomize" name="randomize" value="randomize">
+                <label for="randomize">Randomize</label>
+            </div>            
+        </div>
+        <div id="grid">
+            <table id="table">
+                <tbody id="gridBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="gameOfLife.js"></script>
+</body>
+</html>
